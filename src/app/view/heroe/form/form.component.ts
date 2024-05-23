@@ -24,7 +24,7 @@ export class FormComponent implements OnInit {
       name: ["", Validators.required],
       email: ["", [Validators.required,Validators.email]],
       password: ["", [Validators.required,Validators.minLength(8),Validators.maxLength(16)]],
-      tel: ["", [Validators.required,Validators.minLength(10)]]
+      tel: ["", [Validators.required,Validators.maxLength(10)]]
     })
      
     }
