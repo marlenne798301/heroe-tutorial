@@ -1,0 +1,23 @@
+<div>
+    <form [formGroup]="formGroup">
+        
+        <label for="name">Nombre: </label>
+        <input formControlName="name"> 
+        <br>
+
+        <label for="email">Email:  </label>
+        <input formControlName="email">
+        <br>
+
+        <label for="contraseña">Contraseña: </label>
+        <input formControlName="password" type="password">
+        <br>
+        
+        <label for="tel">Telefono: </label>
+        <input formControlName="tel">
+        <br>
+        <br>
+        <button (click) ="submit()" [disabled]="formGroup.invalid">Subir</button>
+    </form>
+</div>
+
